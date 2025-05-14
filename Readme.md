@@ -2,54 +2,55 @@
 
 This repository contains a simple Python & Selenium automated test that verifies the error message displayed when invalid credentials are entered on the login page: https://the-internet.herokuapp.com/login.
 
-🚀 Prerequisites
+### 🚀 Prerequisites
 
-Python 3.x
+- Python 3.x
 
-pip (Python package manager)
+- pip (Python package manager)
 
-Web browser
+- Web browser
 
-Selenium
+- Selenium
 
-Webdriver
+- Webdriver
 
-🛠️ Installation
+# 🛠️ Installation
 
-Clone the repository
-
+### Clone the repository
+```sh
 git clone <project-url>
-
 cd <project-repo-folder>
-
-# Install dependencies
-
-``` sh
-
-pip install selenium
 ```
 
-▶️ Running the Test
+### Install dependencies
+
 ``` sh
- 
+pip install selenium
+pip install webdriver-manager
+```
+
+### ▶️ Running the Test
+``` sh
 python test_invalid_login.py
 ```
 
 After running, you should see an OK if the test passes or an error traceback if it fails.
 
-📂 Project Structure
+## 📂 Project Structure
 
-test_invalid_login.py – Contains the unittest.TestCase that:
+test_invalid_login.py – Contains the unittest.
 
-Opens Chrome via Selenium
+#### TestCase that:
 
-Navigates to the login page
+- Opens Chrome via Selenium
 
-Enters invalid username/password
+- Navigates to the login page
 
-Submits the form
+- Enters invalid username/password
 
-Asserts the presence of the appropriate error message
+- Submits the form
 
-Closes the browser
+- Asserts the presence of the appropriate error message
+
+- Closes the browser
 
